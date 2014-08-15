@@ -1,0 +1,15 @@
+# We define a namespace with a symbol
+namespace :simple do
+
+  # Task is a rake keyword
+  # Description is a method that takes a string that describes
+  desc "Hello task"
+  task :hello do
+    # Inside the block that we pass to the 'task' method are defined actions
+    puts "hello there"
+  end
+
+  task :hello do
+    puts "Hello Again"
+  end
+end
